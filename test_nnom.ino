@@ -36,7 +36,7 @@ void randomizeInput(int min, int max) {
   }
 }
 
-int sendData(int8_t* data, int data_length) {
+void sendData(int8_t* data, int data_length) {
   for (int i = 0; i < data_length; i++) {
     COMM.write(data[i]);
   }
